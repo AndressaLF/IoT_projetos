@@ -1,5 +1,7 @@
 # importação das bibliotecas
 import paho.mqtt as mqtt
+import time
+
 
 # Informações necessárias para se conectar ao Broker MQTT
 
@@ -17,7 +19,7 @@ sensor_state_topic = "sensor_infra/state"
 
 # configuração inicial
 
-animal_presence = False
+sensor_presenca = 0
 state = "OFF"
 
 # Instanciando o cliente MQTT 
@@ -59,11 +61,29 @@ def alimentar_pet():
         sensor_state_topic, "OFF!")  # atualiza o state do sensor -> (topic/payload)
 
 
+# Lógica para tratamento dos dados do sensor de presença
+
+def detectar_presenca_pet():
+    if sensor_presenca == 1:
+        return True
+    else:
+        return False
+
+
+# Simulando a detecção de presença do animal
+
+while True:
+    # Verificando a presença do animal
+    animal_presente = detectar_presenca_pet()
+
+    if animal_presente:
+        alimentar_pet()
+
+    # Aguardando um intervalo antes de verificar a presença novamente
+    time.sleep(10)
+    
+
 # chamando as funções de conexão e mensagem
 
 client.on_connect = on_connect
 client.on_message = on_message
-
-
-client.loop_start()
-
