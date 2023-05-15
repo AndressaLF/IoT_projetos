@@ -1,26 +1,69 @@
+# importação das bibliotecas
 import paho.mqtt as mqtt
 
+# Informações necessárias para se conectar ao Broker MQTT
 
-# executada quando o cliente se conecta ao broker
+broker_address = "test.mosquitto.org"  # endereço do servidor MQTT
+port = 1883  # porta usada para conexão
+keepalive = 60  # tempo máx(s) que o cliente deve esperar entre as mensagens
+user = 'petfeeder'
+
+
+# Tópicos utilizados controlar e obter informações do sensor de presença
+
+sensor_set_topic = "sensor_infra/set"
+sensor_state_topic = "sensor_infra/state"
+
+
+# configuração inicial
+
+animal_presence = False
+state = "OFF"
+
+# Instanciando o cliente MQTT 
+
+client = mqtt.Client(user)
+client.connect(broker_address, port, keepalive)  # conectando ao broker MQTT
+
+
+# Executa quando o cliente se conectar ao servidor MQTT
+
 def on_connect(client, userdata, flags, rc):
-    print(f"Conectado. Código:{str(rc)}")
-
- 
-# executada quando uma mensagem é recebida
-def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
-
-
-def connect_mqtt():
-    pet_feeder_id = mqtt.Client("pet_feeder")  # instanciando o cliente MQTT
-    pet_feeder_id.on_connect = on_connect
-    pet_feeder_id.on_message = on_message
-    pet_feeder_id.connect("mqtt.server.com", 1883, 60)
+    if rc == 0:
+        client.subscribe(sensor_state_topic)  # inscrição do cliente no tópico state do sensor
+        print("Conexão bem-sucedida! Inscrito no tópico de state.")
+    else:
+        print(f"Falha na conexão. Código de resultado: {rc}")
 
 
+# Executada quando o cliente MQTT recebe uma mensagem do servidor MQTT
+
+def on_message(client, userdata, message):
+
+    global animal_presence, state
+    
+    if message.topic == sensor_state_topic:  
+        state = str(message.payload)  # (ON ou OFF)
+            
+        if state == "ON":
+            alimentar_pet()
+        else:
+            state == "OFF"
+            
+            
+def alimentar_pet():
+    print("Alimentando o pet...")
+    client.publish(
+        sensor_set_topic, "Pet Alimentado")
+    client.publish(
+        sensor_state_topic, "OFF!")  # atualiza o state do sensor -> (topic/payload)
 
 
+# chamando as funções de conexão e mensagem
 
-def connect(client):
-    client.username_pw_set("user", password="password")
-    client.connect("mqtt.server.com", 1883, 60)
+client.on_connect = on_connect
+client.on_message = on_message
+
+
+client.loop_start()
+
