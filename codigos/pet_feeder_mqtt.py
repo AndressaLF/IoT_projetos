@@ -17,14 +17,15 @@ client.connect(broker_address, port=port, keepalive=keepalive)
 
 # Tópicos utilizados
 
-sensor_set_topic = "sensor_infra/set"
-sensor_state_topic = "sensor_infra/state"
+sensor_set_topic = "sensor/sensor_infra/set"
+sensor_state_topic = "sensor/sensor_infra/state"
+sensor_state_topic_ = "sensor/state"
 
 
 # configuração inicial
 
-sensor_presenca = 0  # (0 ou 1) - coletando dados do sensor de presença
 state = "OFF"
+set = ""
 
 
 # Executa quando o cliente se conectar ao servidor MQTT
@@ -52,7 +53,7 @@ def alimentar_pet():
 
 def on_message(client, userdata, message):
     
-    global state
+    global state, set
 
     if message.topic == sensor_state_topic:
         state = str(message.payload)  # (ON ou OFF)
