@@ -1,5 +1,6 @@
 # Primeiros passos para implantação de uma aplicação na AWS
 
+<a name="ancora"></a>
 ## Índice
 - [Acesse a página do AWS Academy](#acessse-a-pagina-do-aws-academy)
 - [Acessando a aba módulos](#acessse-a-aba-modulos)
@@ -8,7 +9,7 @@
   - [Subtítulo 2.1](#subtítulo-2.1)
   - [Subtítulo 2.2](#subtítulo-2.2)
 
-
+<a id="acessse-a-pagina-do-aws-academy"></a>
 ## [Acesse a página do AWS Academy](#acessse-a-pagina-do-aws-academy)
 
 Acesse a pagina referente ao sistema de gerenciamento de aprendizagem (LMS) usado pela AWS Academy: `https://awsacademy.instructure.com/login/canvas`.
@@ -16,15 +17,15 @@ Essa é a pagina de login do **Canvas** que é destinadaao ao acesso ao ambiente
 
 ![Acessando o sistema e realizando login](../img/login0.jpg "Acessando o sistema e realizando login")
 
-
-## [Acessando a aba módulose](#acessse-a-aba-modulos)
+<a id="acessse-a-aba-modulos"></a>
+## Acessando a aba módulos
 
 Após realizar o login, você estará na Home. Selecione a opção _Módulos_. Ao clicar nessa opção "Módulos", você terá acesso a uma lista de módulos de aprendizagem disponíveis. Esses módulos podem abranger diferentes tópicos relacionados à computação em nuvem, serviços da AWS, arquitetura de soluções, segurança, entre outros.
 
 ![Acessando a opção modulos](../img/home1.jpg "Acessando a opção modulos")
 
 
-## [Acessando o laboratório de aprendizagem](#acessse-laboratório-de-aprendizagem)
+## Acessando o laboratório de aprendizagem
 
 O laboratório de aprendizagem permitir que o usuário tenha acesso e possa participar dos laboratórios práticos relacionados aos cursos ou treinamentos oferecidos pela AWS Academy. 
 
@@ -32,7 +33,8 @@ Dentro dessa opção você encontrará uma série de recursos e atividades prát
 
 ![Acessando o laboratório de aprendizagem](../img/lab_home2.jpg "Acessando o laborátorio de aprendizagem")
 
-## [Acessando o laboratório de aprendizagem](#acessse-laboratório-de-aprendizagem)
+<a id="acessse-laboratório-de-aprendizagem"></a>
+## Acessando o laboratório de aprendizagem
 
 No laboratório de aprendizagem é possível perceber que existe uma opção chamada "AWS" (imagem abaixo). 
 
