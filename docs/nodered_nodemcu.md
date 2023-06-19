@@ -18,7 +18,7 @@
 
 Inicialmente começaremos essa leitura com o objetivo de entender o que é o Node-Red, após isso nos aprofundaremos nas usabilidade das suas ferramentas.
 
-<a id="_q_e_nodered"></a>
+<a id="o_q_e_nodered"></a>
 ## [O que é o Node-Red?](#o_q_e_nodered)
 
 O Node-RED é uma ferramenta de programação visual de código aberto que permite conectar dispositivos, APIs e serviços online de forma fácil e rápida. Ele utiliza uma interface baseada em navegador para criar fluxos de trabalho automatizados usando blocos de construção lógicos chamados "nós" (nodes) e conexões entre eles. 
@@ -49,7 +49,7 @@ O Node-RED agora está instalado e em execução dentro de um contêiner Docker.
 A documentação oficial do Node-Red também mostra como a instalação via docker pode ser realizada, neste [link](https://nodered.org/docs/getting-started/docker).
 
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="para_q_posso_usar_nodered"></a>
 ## [Para que posso usar o Node-Red?](#para_q_posso_usar_nodered)
 
 
@@ -69,7 +69,7 @@ Algumas das situações em que ela pode ser utilizada foram descritas abaixo:
 
 - Monitoramento e controle remoto: O Node-RED pode ser usado para criar painéis de controle personalizados, onde você pode monitorar e controlar dispositivos e sistemas em tempo real. Com o plugin Dashboard, é possível criar interfaces gráficas interativas para visualização de dados e controle de dispositivos.
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="o_que_sao_plugins"></a>
 ## [O que são plugins e como utilizá-los?](#o_que_sao_plugins)
 
 Os plugins do Node-RED, também chamados de "nodes" ou "pacotes", são extensões de software que fornecem funcionalidades adicionais ao ambiente do Node-RED. Eles são desenvolvidos por terceiros e podem ser instalados para estender as capacidades do Node-RED.
@@ -89,7 +89,7 @@ Na guia "Available" (Disponíveis), você encontrará uma lista de todos os plug
 
 5. Após a instalação, você encontrará os nós do novo plugin na paleta de blocos do Node-RED, organizados por categoria.
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="plugins_utilizados_atividade"></a>
 ## [Plugins utilizados nessa atividade](#plugins_utilizados_atividade)
 
 
@@ -121,7 +121,7 @@ Esse plugin é uma extensão do Node-RED que permite criar painéis interativos 
 Exemplo de utilização da documentação pode ser acessado nesse (link)[https://flows.nodered.org/node/node-red-dashboard]
 
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="nodemcu"></a>
 # [NodeMCU](#nodemcu)
 
 O NodeMCU é uma plataforma de desenvolvimento de Internet das Coisas (IoT) baseada no microcontrolador ESP8266. Ele combina a facilidade de uso do NodeMCU firmware com o poder do ESP8266, permitindo criar projetos IoT de maneira rápida e eficiente.
@@ -130,11 +130,11 @@ A utilização do NodeMCU é ampla e versátil. Com sua conectividade Wi-Fi embu
 
 Com o NodeMCU, você pode coletar dados de sensores e enviá-los para a nuvem, controlar dispositivos remotamente por meio de uma interface web ou aplicativo móvel, criar sistemas de automação residencial, construir protótipos de projetos IoT e muito mais. Uma das principais vantagens do NodeMCU é a sua compatibilidade com a plataforma Arduino, o que permite aproveitar a vasta quantidade de bibliotecas e exemplos disponíveis para o Arduino. 
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="nodemcu-config"></a>
 ## [Configurações iniciais do NodeMCU](#nodemcu-config)
 
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="cenarios-explorados"></a>
 # [Cenários Explorados](#cenarios-explorados)
 
 
