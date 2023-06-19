@@ -13,19 +13,19 @@
 - [Cenários Explorados](#cenarios-explorados)
 
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="nodered"></a>
 # [Node-Red](#nodered)
 
 Inicialmente começaremos essa leitura com o objetivo de entender o que é o Node-Red, após isso nos aprofundaremos nas usabilidade das suas ferramentas.
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="_q_e_nodered"></a>
 ## [O que é o Node-Red?](#o_q_e_nodered)
 
 O Node-RED é uma ferramenta de programação visual de código aberto que permite conectar dispositivos, APIs e serviços online de forma fácil e rápida. Ele utiliza uma interface baseada em navegador para criar fluxos de trabalho automatizados usando blocos de construção lógicos chamados "nós" (nodes) e conexões entre eles. 
 
 Pode ser de grande ajuda consultar a documentação oficial da ferramenta, através desse [link](https://nodered.org/).
 
-<a id="primeiros-passos-Node-Red-NodeMCU"></a>
+<a id="como_instalar_nodered_no_docker"></a>
 ## [Como instalar o Node-Red do Ubuntu com Docker?](#como_instalar_nodered_no_docker)
 
 Para instalar o Node-Red do Ubuntu usando o docker, siga os passos abaixo:
