@@ -173,7 +173,7 @@ O código utilizado nesse exemplo para a comunicação entre o NodeMCU via MQTT,
 
 Nessa atividade foram explorados 3 cenários principais, descritos abaixo:
 
-1. Comunicação do NodeMCU com MQTT:
+## 1. Comunicação do NodeMCU com MQTT:
 
 Nesse cenário, o NodeMCU foi conectado na porta USB do computador usando a COM12. Uma vez conectado e realizadas as configurações de senha, rede wifi, servidor broker e o tópico do canal, basta abrir o terminal da IDE e esperar o status da conexão.
 
@@ -184,7 +184,7 @@ Com o MQTT dashboard instalado no celular (verifique esse procedimento nesse [aq
 
 Enviando a palavra ligar via canal teste1, o led acende e fica assim por 3segundos. Nesse processo ele envia uma mensagem para o tópico "status" informando o status do led. Após o tempo determinado ele apaga, o procedimento de apagar o led funciona da mesma maneira, uma mensagem desligar é enviada via canal teste1, e sua resposta é publicada no canal status.
 
-2. Comunicação do NodeMCU via MQTT com o Node-red e recebe comandos do Dashboard:
+## 2. Comunicação do NodeMCU via MQTT com o Node-red e recebe comandos do Dashboard:
 
 Para esse cenário foi necessário instalar o plugin do dashboard no Node-RED, seguindo os passos abaixo:
 
@@ -205,11 +205,11 @@ A configuração dos blocos pode ser observada na imagem abaixo:
 Essa estrutura permitirá enviarmos uma mensagem via dashboard apertando o button, essa mensagem será encaminhada para o NodeMCU via mqtt, a resposta enviada pelo NodeMCU, publicada no canal status será visualizada no dashboard via o bloco text, além de poder ser visualizada via debug console no Node-RED por estarmos usando o bloco de debug.
 
 Uma outra configuração que também foi testada foi a apresentada abaixo:
-![Arduino IDE6](../img/dashboard_mqtt3.jpg)
+![Arduino IDE7](../img/dashboard_mqtt3.jpg)
 
 Nessa opção temos dois blocos de Debug que permitem visualizar no Node-Red tanto o envio como o recebimento da mensagem.
 
-3.  Comunicação do NodeMCU via MQTT com um rede social (Ex: Telegram).
+## 3.Comunicação do NodeMCU via MQTT com um rede social (Ex: Telegram).
 
 O procedimento para instalação do plugin também deve ser repetido para essa situação. O plugin instalado aqui foi "node-red-contrib-telegrambot".
 
@@ -220,4 +220,4 @@ Para essa comunicação é importante termos o ID do chat e token do bot criado 
 A configuração final do cenário é representada na imagem abaixo:
 É interessante observar que existem 3 blocos mqtt server,isso ocorre pois nesse exemplo eu testei 3 canais com tópicos diferentes para recebimento das mensagens publicadas como resposta pelo mqtt.
 
-![Arduino IDE6](../img/dashboard_mqtt_telegram.jpg)
+![Arduino IDE8](../img/dashboard_mqtt_telegram.jpg)
