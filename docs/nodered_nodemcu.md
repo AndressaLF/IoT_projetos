@@ -205,7 +205,7 @@ A configuração dos blocos pode ser observada na imagem abaixo:
 Essa estrutura permitirá enviarmos uma mensagem via dashboard apertando o button, essa mensagem será encaminhada para o NodeMCU via mqtt, a resposta enviada pelo NodeMCU, publicada no canal status será visualizada no dashboard via o bloco text, além de poder ser visualizada via debug console no Node-RED por estarmos usando o bloco de debug.
 
 Uma outra configuração que também foi testada foi a apresentada abaixo:
-![Arduino IDE7](../img/dashboard_mqtt3.jpg)
+![Arduino IDE7](../img/dashboard_mqtt2.JPG)
 
 Nessa opção temos dois blocos de Debug que permitem visualizar no Node-Red tanto o envio como o recebimento da mensagem.
 
