@@ -131,11 +131,93 @@ A utilização do NodeMCU é ampla e versátil. Com sua conectividade Wi-Fi embu
 Com o NodeMCU, você pode coletar dados de sensores e enviá-los para a nuvem, controlar dispositivos remotamente por meio de uma interface web ou aplicativo móvel, criar sistemas de automação residencial, construir protótipos de projetos IoT e muito mais. Uma das principais vantagens do NodeMCU é a sua compatibilidade com a plataforma Arduino, o que permite aproveitar a vasta quantidade de bibliotecas e exemplos disponíveis para o Arduino. 
 
 <a id="nodemcu-config"></a>
-## [Configurações iniciais do NodeMCU](#nodemcu-config)
+## [Configurações iniciais do NodeMCU no Arduino IDE](#nodemcu-config)
+Após conectar o NodeMCU a porta USB do computador é necessário realizar as configurações na IDE Arduino(software).
 
+O passo a passo dessa configuração pode ser acompanhado resumidamente abaixo:
+1. Abra a IDE do Arduino e navegue até a Arquivo -> Preferências.
+
+![Arduino IDE](../img/arduinoIDE.jpg)
+
+Procure pelo campo URLs adicionais de Gerenciadores de Placas e insira o link: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
+
+O resultado deve ser o seguinte:
+
+![Arduino IDE2](../img/arduinoIDE2.jpg)
+
+2. Agora clique em Ferramentas -> Placa -> Gerenciador de Placas:
+
+![Arduino IDE3](../img/arduinoIDE3.jpg)
+
+3. Baixe a biblioteca ESP8266:
+Busque pela opção esp8266 by ESP8266 Community e clique no botão Instalar.
+
+![Arduino IDE4](../img/arduinoIDE4.jpg)
+
+Confira se sua placa está disponível em Ferramentas -> Placa:
+
+![Arduino IDE5](../img/arduinoIDE5.jpg)
+
+4. Baixe e instale a biblioteca PubSubClient em Ferramentas -> Gerênciar Biblioteca:
+
+![Arduino IDE6](../img/arduinoIDE6.jpg)
+
+Agora está tudo pronto para iniciarmos o projeto.
+
+O código utilizado nesse exemplo para a comunicação entre o NodeMCU via MQTT, pode ser encontrado [aqui](../codigos/codigos/mqtt_ardunino.ino).
+
+- OBS: Fique atento a qual porta USB o NodeMCU foi conectado e na IDE escolha ela como sendo a porta de comunicação no menu Ferramentas -> Porta.
 
 <a id="cenarios-explorados"></a>
 # [Cenários Explorados](#cenarios-explorados)
 
+Nessa atividade foram explorados 3 cenários principais, descritos abaixo:
 
+1. Comunicação do NodeMCU com MQTT:
 
+Nesse cenário, o NodeMCU foi conectado na porta USB do computador usando a COM12. Uma vez conectado e realizadas as configurações de senha, rede wifi, servidor broker e o tópico do canal, basta abrir o terminal da IDE e esperar o status da conexão.
+
+Essas configurações podem ser acompanhadas diretamente no (código)[../codigos/codigos/mqtt_ardunino.ino], nesse caso foi utilizado o canal "teste1".
+
+A comunicação foi testada através do acendimento do led do NodeMCU.
+Com o MQTT dashboard instalado no celular (verifique esse procedimento nesse [aqui](./mqtt_dashboard_apk.md)), criei um novo canal utilizando o mesmo tópico inserido no código (teste1).
+
+Enviando a palavra ligar via canal teste1, o led acende e fica assim por 3segundos. Nesse processo ele envia uma mensagem para o tópico "status" informando o status do led. Após o tempo determinado ele apaga, o procedimento de apagar o led funciona da mesma maneira, uma mensagem desligar é enviada via canal teste1, e sua resposta é publicada no canal status.
+
+2. Comunicação do NodeMCU via MQTT com o Node-red e recebe comandos do Dashboard:
+
+Para esse cenário foi necessário instalar o plugin do dashboard no Node-RED, seguindo os passos abaixo:
+
+Acesse o Menu de Opções localizado no canto superior direito selecione a opção Manage pallete:
+
+![AConfigurações Node-RED](../img/node_red.jpg)
+
+Na aba de plugins Install digite dashboard e instale o plugin chamado node-red-dashboard.
+
+![AConfigurações Node-RED2](../img/node_red2.jpg)
+
+Com o plugin instalado já será possivel notar os novos blocos referentes ao dashboard presentes na tela principal. Usaremos o button e o text. 
+
+A configuração dos blocos pode ser observada na imagem abaixo:
+
+![Arduino IDE6](../img/dashboard_mqtt1.jpg)
+
+Essa estrutura permitirá enviarmos uma mensagem via dashboard apertando o button, essa mensagem será encaminhada para o NodeMCU via mqtt, a resposta enviada pelo NodeMCU, publicada no canal status será visualizada no dashboard via o bloco text, além de poder ser visualizada via debug console no Node-RED por estarmos usando o bloco de debug.
+
+Uma outra configuração que também foi testada foi a apresentada abaixo:
+![Arduino IDE6](../img/dashboard_mqtt3.jpg)
+
+Nessa opção temos dois blocos de Debug que permitem visualizar no Node-Red tanto o envio como o recebimento da mensagem.
+
+3.  Comunicação do NodeMCU via MQTT com um rede social (Ex: Telegram).
+
+O procedimento para instalação do plugin também deve ser repetido para essa situação. O plugin instalado aqui foi "node-red-contrib-telegrambot".
+
+Após a instalação os blocos referentes ao telegram já poderão ser vistos na tela principal. Foram usados apenas o telegram sender e receiver. 
+
+Para essa comunicação é importante termos o ID do chat e token do bot criado no telegram. Essas configurações são pedidas nos blocos citados acima.
+
+A configuração final do cenário é representada na imagem abaixo:
+É interessante observar que existem 3 blocos mqtt server,isso ocorre pois nesse exemplo eu testei 3 canais com tópicos diferentes para recebimento das mensagens publicadas como resposta pelo mqtt.
+
+![Arduino IDE6](../img/dashboard_mqtt_telegram.jpg)
