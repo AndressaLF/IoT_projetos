@@ -10,7 +10,6 @@
     - [Plugins utilizados nessa atividade](#plugins_utilizados_atividade)
 - [NodeMCU e Arduino IDE](#nodemcu)
     - [Configurações iniciais do NodeMCU no Arduino IDE](#nodemcu-config)
-    - [Configurações iniciais ](#nodemcu-config)
 - [Cenários Explorados](#cenarios-explorados)
 
 
