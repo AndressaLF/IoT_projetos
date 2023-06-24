@@ -8,8 +8,9 @@
     - [Para que posso usar o Node-Red?](#para_q_posso_usar_nodered)
     - [O que são plugins e como utilizá-los?](#o_que_sao_plugins)
     - [Plugins utilizados nessa atividade](#plugins_utilizados_atividade)
-- [NodeMCU](#nodemcu)
-    - [Configurações iniciais do NodeMCU](#nodemcu-config)
+- [NodeMCU e Arduino IDE](#nodemcu)
+    - [Configurações iniciais do NodeMCU no Arduino IDE](#nodemcu-config)
+    - [Configurações iniciais ](#nodemcu-config)
 - [Cenários Explorados](#cenarios-explorados)
 
 
