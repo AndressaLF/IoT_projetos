@@ -220,4 +220,4 @@ Para essa comunicação é importante termos o ID do chat e token do bot criado 
 A configuração final do cenário é representada na imagem abaixo:
 É interessante observar que existem 3 blocos mqtt server,isso ocorre pois nesse exemplo eu testei 3 canais com tópicos diferentes para recebimento das mensagens publicadas como resposta pelo mqtt.
 
-![Arduino IDE8](../img/dashboard_mqtt_telegram.jpg)
+![Arduino IDE8](../img/dashboard_mqtt_telegram.JPG)
