@@ -107,3 +107,12 @@ Utilizando o Elasticsearch Service, os usuários podem implantar e configurar *c
 
 <a id="licoes-curso"></a>
 # [Quais as principais lições apreendidas do curso?](#licoes-curso)
+
+A realização do curso foi de extrema importância para minha formação na área de tecnologia, principalmente relacionada a minha área de atuação que se enquadra no contexto da ciência de dados. Essa experiência foi ainda mais enriquecedora para mim, uma vez que puder estar em contato com ferramentas tão importantes como as oferecidas pela AWS.
+
+Algumas lições importante foram retiradas dessa experiência como a autonomia necessária para conclusão dos laborátorios,além dessa lição posso citar inúmeras outras como:
+
+- Conhecimento das tecnologias da AWS
+- Experiência com a análise de dados em nuvem
+- Conhecimento relacionado ao processamento de dados em tempo real
+- Conhecimento prático para integração entre os serviços AWS
