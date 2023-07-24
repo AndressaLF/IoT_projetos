@@ -51,7 +51,6 @@ O objetivo desse laboratório é conhecer o **Amazon Kinesis Firehose**, que é 
 
 Neste laboratorio são apresentados o **AWS IoT Analytics** e o **AWS IoT Core**. O IoT Analytics permite coletar, processar e analisar grandes volumes de dados gerados por dispositivos IoT, ajudando a extrair insights valiosos e a tomar decisões inteligentes com base nesses dados. O IoT Core fornece conetividade entre dispositivos IoT e serviços AWS. Além dessas ferramentas, nesse laboratório usamos um script Python para simular o carregamento de dados no AWS IoT Core e realizamos consultas para analisar esses dados.
 
-
 <a id="solucoes-estudadas"></a>
 # [Quais as soluções AWS estudadas e o que cada uma atende?](#solucoes-estudadas)
 
@@ -64,14 +63,6 @@ No contexto de soluções, as ferramentas oferecidas pela AWS podem se confundir
 **1. Amazon Athena**
 
 Amazon Athena é um serviço de análise interativo que permite consultar e analisar dados armazenados no Amazon S3 usando SQL padrão. Ele foi projetado para tornar a análise de dados mais rápida, simples e escalável, sem a necessidade de configurar e gerenciar um banco de dados ou infraestrutura complexa. Ele pode ser utilizado para analisar tanto dados não estruturados como dados semiestruturados armazenados no S3.
-
-As principais ferramentas e recursos utilizados do Amazon Athena nos laboratórios foram: 
-
-- AWS Management Console: O Amazon Athena pode ser acessado e configurado através da AWS Management Console, que é a interface web da AWS para gerenciar seus serviços em nuvem. Através do console, você pode criar bancos de dados, tabelas, executar consultas e visualizar os resultados.
-
-- Query Editor: O Query Editor é uma ferramenta integrada ao console do Amazon Athena que permite escrever e executar consultas SQL diretamente na interface web. Com ele, você pode consultar os dados armazenados no Amazon S3 sem precisar instalar ou configurar softwares adicionais.
-
-- Integração com Amazon S3:O Amazon Athena é altamente integrado com o Amazon S3, permitindo que você consulte dados diretamente nos arquivos armazenados no S3 sem a necessidade de carregá-los em um banco de dados ou data warehouse.
 
 **2. Amazon Redshift**
 
@@ -104,13 +95,11 @@ O **Amazon Kinesis Data Firehose** é um serviço que permite a captura, transfo
 
 O Kinesis Data Firehose é principalmente utilizado para coletar e processar grandes volumes de dados em tempo real, vindos de várias fontes, como dispositivos IoT, logs de aplicativos, eventos de sites, feeds de redes sociais, entre outros. O serviço facilita a entrega desses dados de *streaming* para destinos como o Amazon S3, o Amazon Redshift, o Amazon Elasticsearch ou até mesmo para a análise em tempo real com o Amazon Kinesis Data Analytics.
 
-
 **7. Amazon Elasticsearch Service**
 
 O **Amazon Elasticsearch Service** é um serviço que permite criar, executar e escalar *clusters* Elasticsearch de maneira fácil e eficiente. O Elasticsearch é uma poderosa ferramenta de busca e análise de dados em tempo real, amplamente utilizada para indexar, pesquisar e visualizar grandes volumes de dados não estruturados.
 
 Utilizando o Elasticsearch Service, os usuários podem implantar e configurar *clusters* Elasticsearch sem a necessidade de gerenciar a infraestrutura subjacente como provisionamento de servidores, ajuste de desempenho, aplicação de *patches* e *backups*. Sua implantação permite que os usuários se concentrem na análise de dados em vez de tarefas de gerenciamento de infraestrutura.
-
 
 <a id="atividades-laboratorio-pratico"></a>
 # [Explique três exemplos de atividades que você realizou no laboratório prático](#atividades-laboratorio-pratico)
