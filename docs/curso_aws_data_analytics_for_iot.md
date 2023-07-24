@@ -75,20 +75,41 @@ As principais ferramentas e recursos utilizados do Amazon Athena nos laboratóri
 
 **2. Amazon Redshift**
 
+O **Amazon Redshift** é um serviço de *data warehouse* totalmente gerenciável, o que significa que foi projetado para assumir todas as tarefas e responsabilidades operacionais sem a necessidade de intervenção direta do usuário. Isso permite que os usuários se concentrem exclusivamente na análise de dados, sem se preocupar com a complexidade da infraestrutura subjacente. Sua principal aplicação é realizar análises e consultas em grandes volumes de dados. Ele é especialmente útil para empresas e organizações que precisam analisar dados estruturados em busca de insights valiosos. Através do Redshift, os usuários podem executar consultas complexas em tempo hábil, permitindo a extração de informações importantes para tomada de decisões estratégicas.
+
+Uma das características distintivas do Amazon Redshift é sua arquitetura de banco de dados colunar, essa abordagem permite que o Redshift processe consultas analíticas e agregações rapidamente, tornando-o uma escolha ideal para analisar grandes volumes de dados de maneira eficiente. Além disso ele é totalmente escalável, o que significa que pode crescer de acordo com as necessidades das empresas, acomodando volumes de dados em constante expansão. Sua integração com outras ferramentas da AWS e compatibilidade com diversas aplicações de Business Intelligence (BI) facilitam a visualização e comunicação dos resultados da análise.
 
 **3. Amazon S3**
+
+O **Amazon S3** (Simple Storage Service) é um serviço de armazenamento de objetos altamente escalável e durável.Ele foi criado para armazenar e recuperar grandes quantidades de dados de forma segura e eficiente. Entre as ferramentas disponibilizadas para armazenamento de dados em nuvem, o S3 é uma das opções mais populares devido à sua confiabilidade, acessibilidade e facilidade de uso.
+
+No S3, os dados são armazenados em "objetos", que podem ser qualquer tipo de arquivo digital, como imagens, vídeos, áudios, documentos de texto e muito mais. Cada objeto é identificado por uma chave única e pode ser acessado através de URLs (Uniform Resource Locators) específicos fornecidos pelo serviço.
+
 **4. AWS Glue**
+
+O **AWS Glue** é um serviço de ETL (Extract, Transform, Load). O ETL é um processo essencial no contexto de análise de dados, que envolve a extração de dados de várias fontes, sua transformação para um formato adequado e a carga dos dados em um destino, como um *data warehouse* ou *data lake*, para fins de análise e tratamento.
+
+O principal objetivo do AWS Glue é simplificar e automatizar o processo de ETL. Ele oferece uma plataforma para a criação, execução e agendamento de fluxos de trabalho ETL sem a necessidade de configurar ou gerenciar a infraestrutura subjacente. Isso permite que os usuários se concentrem na lógica de transformação dos dados, em vez de se preocuparem com a complexidade do ambiente de ETL.
+
+
 **5. AWS IoT Analytics**
+
+O AWS IoT Analytics é um serviço que permite a análise de dados coletados de dispositivos como sensores, medidores e máquinas, que além de estar conectados à internet também podem coletar e transmitir dados.
+
+O AWS IoT Analytics facilita a ingestão, processamento, armazenamento e análise de grandes volumes de dados gerados por esses dispositivos IoT. Ele fornece uma plataforma escalável para processar e obter *insights* significativos desses dados, permitindo que as decisões sejam realizadas com base nas informações coletadas.
+
 **6. Amazon Kinesis Data Firehose**
+
+O **Amazon Kinesis Data Firehose** é um serviço que permite a captura, transformação e carregamento de dados de *streaming* em tempo real para armazenamento e análise. Ele faz parte da família de serviços do Amazon Kinesis, que é projetada para lidar com dados em *streaming* de maneira escalável e eficiente.
+
+O Kinesis Data Firehose é principalmente utilizado para coletar e processar grandes volumes de dados em tempo real, vindos de várias fontes, como dispositivos IoT, logs de aplicativos, eventos de sites, feeds de redes sociais, entre outros. O serviço facilita a entrega desses dados de *streaming* para destinos como o Amazon S3, o Amazon Redshift, o Amazon Elasticsearch ou até mesmo para a análise em tempo real com o Amazon Kinesis Data Analytics.
+
+
 **7. Amazon Elasticsearch Service**
 
+O **Amazon Elasticsearch Service** é um serviço que permite criar, executar e escalar *clusters* Elasticsearch de maneira fácil e eficiente. O Elasticsearch é uma poderosa ferramenta de busca e análise de dados em tempo real, amplamente utilizada para indexar, pesquisar e visualizar grandes volumes de dados não estruturados.
 
-
-
-
-
-
-
+Utilizando o Elasticsearch Service, os usuários podem implantar e configurar *clusters* Elasticsearch sem a necessidade de gerenciar a infraestrutura subjacente como provisionamento de servidores, ajuste de desempenho, aplicação de *patches* e *backups*. Sua implantação permite que os usuários se concentrem na análise de dados em vez de tarefas de gerenciamento de infraestrutura.
 
 
 <a id="atividades-laboratorio-pratico"></a>
