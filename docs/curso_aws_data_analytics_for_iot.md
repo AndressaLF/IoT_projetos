@@ -115,26 +115,64 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 
 ### Lab 2: Query Data in Amazon Athena
 
-**Serviços Utilizados**: Amazon Athena, AWS Glue, IAM, S3
+**Serviços Utilizados**: Amazon Athena, AWS Glue, S3
 
 **Objetivo**: Acessar o Amazon Athena via Console de Gerenciamento da AWS, criar um banco de dados no Athena, criar uma tabela no Athena e otimizar um banco de dados Athena.
 
 **Atividades realizadas**:
 
-1. Acessar o Athena 
-2. Criar um banco de dados, uma tabela e uma query em SQL     
-3. Acessar o S3 (Amazon Simple Storage Service)       
-4. Utilizar o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena        
-5. Encontrar e copiar o Amazon Resource Name (ARN)
-6. Integrar o Athena com o S3 no armazenamento e consulta dos dados
-7. Entender e praticar o conceito de otimização do Banco de dados por meio do particionamento da tabela
+1. Acessar o S3 (Amazon Simple Storage Service)      
+![S3](../img/lab2_bucket_s3.jpg)
+
+2. Encontrar e copiar o Amazon Resource Name (ARN)
+![S3](../img/lab2_bucket_s3_arn.jpg)
+
+3. Acessar o Athena e configurar o "Result Location"
+![S3](../img/lab2_bucket_s3_arn2.jpg) 
+
+4. Criar uma query em SQL 
+![S3](../img/lab2_bucket_s3_database.jpg) 
+
+5. Criar uma tabela usando o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena      
+![S3](../img/lab2_bucket_s3_create_database.jpg) 
+
+6. Otimização do Banco de dados por meio do particionamento da tabela
+
+- Criando uma tabela para testar a otimização
+
+![S3](../img/lab2_bucket_s3_otimizacao.jpg) 
+
+
+- Usando consulta para dados não divididos em buckets
+
+![S3](../img/lab2_bucket_s3_consulta1.jpg) 
+
+
+- Usando consulta para dados divididos em buckets
+
+![S3](../img/lab2_bucket_s3_consulta2.jpg) 
+
+7. Particionando os dados
+
+![S3](../img/lab2_bucket_s3_consulta3_particao.jpg) 
+
+
 8. Criar views no Athena com o objetivo de ocultar a complexidade das consultas e otimizar o desempenho
 
+![S3](../img/lab2_bucket_s3_consulta3_views.jpg) 
+
+- Juntando dados utilizando a View
+
+![S3](../img/lab2_bucket_s3_consulta3_views_join.jpg) 
 
 
 ### Lab 3: Query data in Amazon S3 with Amazon Athena and AWS Glue
 
+**Serviços Utilizados**: Amazon Athena, AWS Glue, S3
 
+**Objetivo**: Acessar o Amazon Athena via Console de Gerenciamento da AWS, criar um banco de dados no Athena, criar uma tabela no Athena e otimizar um banco de dados Athena.
+
+**Atividades realizadas**:
 
 
 
