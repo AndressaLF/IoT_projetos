@@ -101,8 +101,52 @@ O **Amazon Elasticsearch Service** é um serviço que permite criar, executar e 
 
 Utilizando o Elasticsearch Service, os usuários podem implantar e configurar *clusters* Elasticsearch sem a necessidade de gerenciar a infraestrutura subjacente como provisionamento de servidores, ajuste de desempenho, aplicação de *patches* e *backups*. Sua implantação permite que os usuários se concentrem na análise de dados em vez de tarefas de gerenciamento de infraestrutura.
 
+
+**8. Identity and Access Management - IAM**
+
+O IAM (Identity and Access Management) é um serviço presenta na Amazon Web Services (AWS) que permite gerenciar o acesso aos recursos e serviços da AWS de forma segura. Com esse serviço é possível criar e gerenciar identidades (como usuários, grupos e funções) e definir permissões e políticas para controlar o que essas identidades podem fazer nos demais serviços da AWS.
+
+A utilização do IAM é altamente recomendável e até mesmo considerada fundamental para garantir a segurança dos recursos da AWS e para cumprir práticas recomendadas de segurança, como a separação de funções e o controle granular de permissões.
+
+
 <a id="atividades-laboratorio-pratico"></a>
 # [Explique três exemplos de atividades que você realizou no laboratório prático](#atividades-laboratorio-pratico)
+
+
+### Lab 2: Query Data in Amazon Athena
+
+**Serviços Utilizados**: Amazon Athena, AWS Glue, IAM, S3
+
+**Objetivo**: Acessar o Amazon Athena via Console de Gerenciamento da AWS, criar um banco de dados no Athena, criar uma tabela no Athena e otimizar um banco de dados Athena.
+
+**Atividades realizadas**:
+
+1. Acessar o Athena 
+2. Criar um banco de dados, uma tabela e uma query em SQL     
+3. Acessar o S3 (Amazon Simple Storage Service)       
+4. Utilizar o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena        
+5. Encontrar e copiar o Amazon Resource Name (ARN)
+6. Integrar o Athena com o S3 no armazenamento e consulta dos dados
+7. Entender e praticar o conceito de otimização do Banco de dados por meio do particionamento da tabela
+8. Criar views no Athena com o objetivo de ocultar a complexidade das consultas e otimizar o desempenho
+
+
+
+### Lab 3: Query data in Amazon S3 with Amazon Athena and AWS Glue
+
+
+
+
+
+
+
+
+
+
+
+
+### Lab 8: Analyze IoT Data with AWS IoT Analytics
+
 
 
 <a id="licoes-curso"></a>
