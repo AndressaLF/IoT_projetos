@@ -117,26 +117,21 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 
 ![S3](../img/lab2_bucket_s3_database.jpg) 
 
-5. Criar uma tabela usando o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena      
+5. Criar uma tabela usando o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena   
+
 ![S3](../img/lab2_bucket_s3_create_database.jpg) 
 
 6. Otimização do Banco de dados por meio do particionamento da tabela
 
-- Criando uma tabela para testar a otimização
-
-![S3](../img/lab2_bucket_s3_otimizacao.jpg) 
-
-- Usando consulta para dados não divididos em buckets
+- Utilizando consulta para dados não divididos em buckets
 
 ![S3](../img/lab2_bucket_s3_consulta1.jpg) 
 
-- Usando consulta para dados divididos em buckets
+- Utilizando consulta para dados divididos em buckets
 
 ![S3](../img/lab2_bucket_s3_consulta2.jpg) 
 
-7. Particionando os dados
-
-![S3](../img/lab2_bucket_s3_consulta3_particao.jpg) 
+7. Testando o particionando dos dados
 
 8. Criar views no Athena com o objetivo de ocultar a complexidade das consultas e otimizar o desempenho
 
@@ -151,10 +146,6 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 **Atividades realizadas**:
 
 1. Acessando o AWS Glue e realizando as configurações inicias do rastreador
-
-![AWS Glue](../img/lab2_bucket_Glue1.jpg) 
-
-![AWS Glue](../img/lab2_bucket_Glue1_crawler.jpg) 
 
 ![AWS Glue](../img/lab2_bucket_Glue1_crawler_config.jpg) 
 
