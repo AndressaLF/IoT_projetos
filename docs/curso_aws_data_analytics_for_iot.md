@@ -86,16 +86,20 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 ![IAM](../img/lab1_iam_usuarios.jpg)            
 
 2. Criando um bucket e carregando um arquivo não comprimido e comprimido
+
 ![IAM](../img/lab1_iam_criarbucket.jpg)         
 ![IAM](../img/lab1_iam_add.jpg)   
 
 3. Realizando uma consulta para confirmar que o arquivo foi carregado
+
 ![IAM](../img/lab1_iam_consulta2.jpg) 
 
-4. Mudando as propriedades de encriptação
+4. Mudando as propriedades de encriptação  
+
 ![IAM](../img/lab1_iam_encripitografia.jpg) 
 
-5. Carregando um arquivo não comprimido e comprimido e confirmando seu carregamento
+5. Carregando um arquivo não comprimido e comprimido e confirmando seu carregamento 
+
 ![IAM](../img/lab1_iam_encripitografia.reduzido.jpg) 
 
 
@@ -107,16 +111,20 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 
 **Atividades realizadas**:
 
-1. Acessar o S3 (Amazon Simple Storage Service)      
+1. Acessar o S3 (Amazon Simple Storage Service)
+
 ![S3](../img/lab2_bucket_s3.jpg)
 
 2. Encontrar e copiar o Amazon Resource Name (ARN)
+
 ![S3](../img/lab2_bucket_s3_arn.jpg)
 
 3. Acessar o Athena e configurar o "Result Location"
+
 ![S3](../img/lab2_bucket_s3_arn2.jpg) 
 
 4. Criar uma query em SQL 
+
 ![S3](../img/lab2_bucket_s3_database.jpg) 
 
 5. Criar uma tabela usando o bucket criado no S3 para armazenar os resultados das consultas executadas no Athena      
@@ -128,11 +136,9 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 
 ![S3](../img/lab2_bucket_s3_otimizacao.jpg) 
 
-
 - Usando consulta para dados não divididos em buckets
 
 ![S3](../img/lab2_bucket_s3_consulta1.jpg) 
-
 
 - Usando consulta para dados divididos em buckets
 
@@ -141,7 +147,6 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 7. Particionando os dados
 
 ![S3](../img/lab2_bucket_s3_consulta3_particao.jpg) 
-
 
 8. Criar views no Athena com o objetivo de ocultar a complexidade das consultas e otimizar o desempenho
 
