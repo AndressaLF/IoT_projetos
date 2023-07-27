@@ -158,26 +158,15 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 ![AWS Glue](../img/lab2_bucket_Glue1_crawler_metdadata.jpg) 
 
 4. Editando o schema criado
-
-![AWS Glue](../img/lab2_bucket_Glue1_crawler_antes.jpg) 
-
-
 5. Consultando a tabela usando o AWS Glue Data Catalog
-
-![AWS Glue](../img/lab2_bucket_Glue1_crawler_consulta.jpg) 
-
 6. Criando uma tabela 
 
 ![AWS Glue](../img/lab2_bucket_Glue1_crawler_criando.jpg) 
 
 7. Criando uma visão e executando uma consulta a partir dos dados selecionados
-
-![AWS Glue](../img/lab2_bucket_Glue1_crawler_criando2.jpg) 
-
 8. Executando uma consulta
 
 ![AWS Glue](../img/lab2_bucket_Glue1_crawler_criando3.jpg) 
-
 
 <a id="licoes-curso"></a>
 # [Quais as principais lições apreendidas do curso?](#licoes-curso)
