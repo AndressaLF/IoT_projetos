@@ -2,7 +2,7 @@
 
 <a name="ancora"></a>
 ## Índice
-- [Conhecendo o curso](#conhecendo-curso)
+- [Visão geral do curso](#conhecendo-curso)
 - [Quais as soluções AWS estudadas e o que cada uma atende?](#solucoes-estudadas)
 - [Explique três exemplos de atividades que você realizou no laboratório prático](#atividades-laboratorio-pratico)
 - [Quais as principais lições apreendidas do curso?](#licoes-curso)
@@ -45,7 +45,6 @@ O **AWS Glue** é um serviço de ETL (Extract, Transform, Load). O ETL é um pro
 
 O principal objetivo do AWS Glue é simplificar e automatizar o processo de ETL. Ele oferece uma plataforma para a criação, execução e agendamento de fluxos de trabalho ETL sem a necessidade de configurar ou gerenciar a infraestrutura subjacente. Isso permite que os usuários se concentrem na lógica de transformação dos dados, em vez de se preocuparem com a complexidade do ambiente de ETL.
 
-
 **5. AWS IoT Analytics**
 
 O AWS IoT Analytics é um serviço que permite a análise de dados coletados de dispositivos como sensores, medidores e máquinas, que além de estar conectados à internet também podem coletar e transmitir dados.
@@ -64,16 +63,40 @@ O **Amazon Elasticsearch Service** é um serviço que permite criar, executar e 
 
 Utilizando o Elasticsearch Service, os usuários podem implantar e configurar *clusters* Elasticsearch sem a necessidade de gerenciar a infraestrutura subjacente como provisionamento de servidores, ajuste de desempenho, aplicação de *patches* e *backups*. Sua implantação permite que os usuários se concentrem na análise de dados em vez de tarefas de gerenciamento de infraestrutura.
 
-
 **8. Identity and Access Management - IAM**
 
 O IAM (Identity and Access Management) é um serviço presenta na Amazon Web Services (AWS) que permite gerenciar o acesso aos recursos e serviços da AWS de forma segura. Com esse serviço é possível criar e gerenciar identidades (como usuários, grupos e funções) e definir permissões e políticas para controlar o que essas identidades podem fazer nos demais serviços da AWS.
 
 A utilização do IAM é altamente recomendável e até mesmo considerada fundamental para garantir a segurança dos recursos da AWS e para cumprir práticas recomendadas de segurança, como a separação de funções e o controle granular de permissões.
 
-
 <a id="atividades-laboratorio-pratico"></a>
 # [Explique três exemplos de atividades que você realizou no laboratório prático](#atividades-laboratorio-pratico)
+
+### Lab 1: Store data in Amazon S3
+
+**Serviços Utilizados**: Access Amazon S3, IAM
+
+**Objetivo**: Acessar o Amazon Redshift via Console de Gerenciamento da AWS, criar um cluster, carregar e consutlar dados do S3 para o Redshift.
+
+**Atividades realizadas**:
+
+1. Criando um usuário e adicionando ele no grupo
+
+![IAM](../img/lab1_iam.jpg)           
+![IAM](../img/lab1_iam_usuarios.jpg)            
+
+2. Criando um bucket e carregando um arquivo não comprimido e comprimido
+![IAM](../img/lab1_iam_criarbucket.jpg)         
+![IAM](../img/lab1_iam_add.jpg)   
+
+3. Realizando uma consulta para confirmar que o arquivo foi carregado
+![IAM](../img/lab1_iam_consulta2.jpg) 
+
+4. Mudando as propriedades de encriptação
+![IAM](../img/lab1_iam_encripitografia.jpg) 
+
+5. Carregando um arquivo não comprimido e comprimido e confirmando seu carregamento
+![IAM](../img/lab1_iam_encripitografia.reduzido.jpg) 
 
 
 ### Lab 2: Query Data in Amazon Athena
@@ -173,31 +196,6 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 8. Executando uma consulta
 
 ![AWS Glue](../img/lab2_bucket_Glue1_crawler_criando3.jpg) 
-
-
-### Lab 8: Analyze IoT Data with AWS IoT Analytics
-
-
-
-
-### Lab 4: Analyze Data with Amazon Redshift
-
-**Serviços Utilizados**: Amazon Glue, S3
-
-**Objetivo**: Acessar o AWS Glue via Console de Gerenciamento da AWS, criar um rastreador (crawler) e um banco de dados no AWS Glue, consultar dados do S3.
-
-**Atividades realizadas**:
-
-
-
-
-
-
-
-
-
-
-
 
 
 <a id="licoes-curso"></a>
