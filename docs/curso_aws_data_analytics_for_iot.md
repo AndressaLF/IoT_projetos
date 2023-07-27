@@ -95,13 +95,7 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 ![IAM](../img/lab1_iam_consulta2.jpg) 
 
 4. Mudando as propriedades de encriptação  
-
-![IAM](../img/lab1_iam_encripitografia.jpg) 
-
 5. Carregando um arquivo não comprimido e comprimido e confirmando seu carregamento 
-
-![IAM](../img/lab1_iam_encripitografia.reduzido.jpg) 
-
 
 ### Lab 2: Query Data in Amazon Athena
 
@@ -111,15 +105,11 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 
 **Atividades realizadas**:
 
-1. Acessar o S3 (Amazon Simple Storage Service)
-
-![S3](../img/lab2_bucket_s3.jpg)
-
-2. Encontrar e copiar o Amazon Resource Name (ARN)
+1. Acessar o S3 (Amazon Simple Storage Service) e copiar o ARN
 
 ![S3](../img/lab2_bucket_s3_arn.jpg)
 
-3. Acessar o Athena e configurar o "Result Location"
+2. Acessar o Athena e configurar o "Result Location"
 
 ![S3](../img/lab2_bucket_s3_arn2.jpg) 
 
@@ -151,11 +141,6 @@ A utilização do IAM é altamente recomendável e até mesmo considerada fundam
 8. Criar views no Athena com o objetivo de ocultar a complexidade das consultas e otimizar o desempenho
 
 ![S3](../img/lab2_bucket_s3_consulta3_views.jpg) 
-
-- Juntando dados utilizando a View
-
-![S3](../img/lab2_bucket_s3_consulta3_views_join.jpg) 
-
 
 ### Lab 3: Query data in Amazon S3 with Amazon Athena and AWS Glue
 
