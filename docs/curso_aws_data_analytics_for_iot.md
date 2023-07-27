@@ -10,16 +10,12 @@
 <a id="conhecendo-curso"></a>
 # [Visão geral do curso](#conhecendo-curso)
 
-O curso **Data Analytics** fornecido pela *AWS Academy* é focado no desenvolvimento das habilidade necessárias para análise de dados e big data utilizando as ferramentas e serviços fornecidos pela AWS.
-
-O curso é subdivivido em nove laboratórios. O foco dos laboratórios está no desenvolvimento do conhecimento relacionado a utilização do conjunto de ferramentas da AWS. 
+O curso **Data Analytics** fornecido pela *AWS Academy* é focado no desenvolvimento das habilidade necessárias para análise de dados e big data utilizando as ferramentas e serviços fornecidos pela AWS.O curso é subdivivido em nove laboratórios. O foco dos laboratórios está no desenvolvimento do conhecimento relacionado a utilização do conjunto de ferramentas da AWS. 
 
 <a id="solucoes-estudadas"></a>
 # [Quais as soluções AWS estudadas e o que cada uma atende?](#solucoes-estudadas)
 
-O desenvolvimento dos oito laboratórios envolveu a utilização de sete soluções oferecidas pela AWS com foco no processamento de dados para IoT. 
-
-Entre as muitas soluções disponibilizadas pela AWS, foram exploradas: 1) Amazon Athena, 2)Amazon Redshift, 3)Amazon S3, 4)AWS Glue, 5)AWS IoT Analytics e 6)Amazon Kinesis Data Firehose e 7) Amazon Elasticsearch Service (Amazon ES).
+O desenvolvimento dos oito laboratórios envolveu a utilização de sete soluções oferecidas pela AWS com foco no processamento de dados para IoT.Entre as muitas soluções disponibilizadas pela AWS, foram exploradas: 1) Amazon Athena, 2)Amazon Redshift, 3)Amazon S3, 4)AWS Glue, 5)AWS IoT Analytics e 6)Amazon Kinesis Data Firehose e 7) Amazon Elasticsearch Service (Amazon ES).
 
 No contexto de soluções, as ferramentas oferecidas pela AWS podem se confundir e por isso explicarei de forma individual o que cada uma delas atende.
 
